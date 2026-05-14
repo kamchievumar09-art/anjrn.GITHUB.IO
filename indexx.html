@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flower Shop</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff0f5;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1526045612212-70caf35c14df');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    font-size:80px;
+    text-shadow:3px 3px 10px black;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:25px;
+    max-width:700px;
+}
+
+/* FLOWERS */
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    margin:60px 0 40px;
+    color:#d63384;
+}
+
+.flowers{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.card-content h2{
+    color:#c2185b;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:18px;
+}
+
+/* ABOUT */
+
+.about{
+    margin-top:80px;
+    padding:80px 10%;
+    background:white;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:50px;
+}
+
+.about img{
+    width:500px;
+    max-width:100%;
+    border-radius:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:50px;
+    color:#d63384;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    font-size:22px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    background:#d63384;
+    color:white;
+    text-align:center;
+    padding:30px;
+    font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Flower Paradise</h1>
+        <p>
+            Эң кооз гүлдөр дүйнөсү. Розалар, лилиялар,
+            орхидеялар жана өзгөчө букеттер.
+        </p>
+    </div>
+</header>
+
+<h1 class="section-title">Биздин Гүлдөр</h1>
+
+<section class="flowers">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7">
+        <div class="card-content">
+            <h2>Роза</h2>
+            <p>Сүйүүнүн жана сулуулуктун символу.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+        <div class="card-content">
+            <h2>Лилия</h2>
+            <p>Жумшактык жана тазалык тартуулайт.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551">
+        <div class="card-content">
+            <h2>Орхидея</h2>
+            <p>Өзгөчө жана люкс көрүнүштөгү гүл.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="about">
+
+    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+
+    <div class="about-text">
+        <h2>Биз жөнүндө</h2>
+        <p>
+            Flower Paradise — бул заманбап гүл дүкөнү.
+            Биз ар бир адамга кубаныч жана кооздук тартуулоо үчүн
+            эң жаңы жана сапаттуу гүлдөрдү сунуштайбыз.
+            Ар бир букет сүйүү менен даярдалат.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Flower Paradise | Beautiful Flower Shop
+</footer>
+
+</body>
+</html>
